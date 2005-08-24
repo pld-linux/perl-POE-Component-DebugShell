@@ -16,6 +16,7 @@ URL:		poe.perl.org
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-POE
+BuildRequires:	perl-POE-API-Peek
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
