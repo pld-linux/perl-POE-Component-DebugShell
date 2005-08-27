@@ -5,23 +5,30 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	POE
 %define		pnam	Component-DebugShell
-Summary:	POE::Component::DebugShell
+Summary:	POE::Component::DebugShell - interactive peeking into a running POE application
+Summary(pl):	POE::Component::DebugShell - interaktywne podgl±danie dzia³aj±cych aplikacji POE
 Name:		perl-POE-Component-DebugShell
 Version:	1.0411
 Release:	0.1
-License:	other, see LICENSE
+License:	MIT-like (see LICENSE)
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-URL:		poe.perl.org
-BuildRequires:	perl-devel >= 1:5.8.0
-BuildRequires:	rpm-perlprov >= 4.1-13
+# Source0-md5:	68aa0496f6ded9e221100c22351a05e5
+URL:		http://poe.perl.org/
 BuildRequires:	perl-POE
 BuildRequires:	perl-POE-API-Peek
+BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-perl-POE-Component-DebugShell module, see poe.perl.org
+This component allows for interactive peeking into a running POE
+application.
+
+%description -l pl
+Ten komponent umo¿liwia interaktywne podgl±danie dzia³aj±cych
+aplikacji POE.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -45,6 +52,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc LICENSE
+%doc Changes LICENSE
 %{perl_vendorlib}/POE/Component/DebugShell.pm
 %{_mandir}/man3/*
