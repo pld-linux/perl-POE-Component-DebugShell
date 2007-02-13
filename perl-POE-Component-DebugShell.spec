@@ -6,7 +6,7 @@
 %define		pdir	POE
 %define		pnam	Component-DebugShell
 Summary:	POE::Component::DebugShell - interactive peeking into a running POE application
-Summary(pl.UTF-8):   POE::Component::DebugShell - interaktywne podglądanie działających aplikacji POE
+Summary(pl.UTF-8):	POE::Component::DebugShell - interaktywne podglądanie działających aplikacji POE
 Name:		perl-POE-Component-DebugShell
 Version:	1.0411
 Release:	1
