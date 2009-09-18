@@ -8,12 +8,12 @@
 Summary:	POE::Component::DebugShell - interactive peeking into a running POE application
 Summary(pl.UTF-8):	POE::Component::DebugShell - interaktywne podglądanie działających aplikacji POE
 Name:		perl-POE-Component-DebugShell
-Version:	1.0411
+Version:	1.412
 Release:	1
 License:	MIT-like (see LICENSE)
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	68aa0496f6ded9e221100c22351a05e5
+# Source0-md5:	25f238d20719aba410fdfaf8efdcabff
 URL:		http://poe.perl.org/
 BuildRequires:	perl-POE
 BuildRequires:	perl-POE-API-Peek
@@ -52,6 +52,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc Changes LICENSE
+%doc LICENSE
 %{perl_vendorlib}/POE/Component/DebugShell.pm
 %{_mandir}/man3/*
